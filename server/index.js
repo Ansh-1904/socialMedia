@@ -23,6 +23,7 @@ const __dirname = path.resolve(path.dirname(""));
 
 async function dbConnection() {
   await mongoose.connect(process.env.MONGODB_URL);
+  //
   console.log("Database Connected");
 }
 
